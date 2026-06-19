@@ -1,179 +1,757 @@
-
+/* =========================
+   RESET + CƠ BẢN
+========================= */
 
 * {
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
 }
 
 
 body {
+
+    margin: 0;
+
     font-family: Arial, Helvetica, sans-serif;
-    line-height: 1.6;
-    background-color: #f4f9ff;
-    color: #333;
+
+    color: #1f2937;
+
+    background-color: #f8fafc;
+
+    line-height: 1.7;
+
 }
+
+
+h1, h2, h3, p {
+
+    margin-top: 0;
+
+}
+
+
+a {
+
+    color: #2563eb;
+
+    text-decoration: none;
+
+}
+
+
+
+
+
+/* =========================
+   MÀU CHỦ ĐẠO
+========================= */
+
+
+:root {
+
+    --primary: #2563eb;
+
+    --accent: #f97316;
+
+    --soft: #eff6ff;
+
+    --dark: #111827;
+
+}
+
+
+
+
+
+
+
+/* =========================
+   HEADER + NAV
+========================= */
 
 
 .site-header {
-    background: #008cba;
-    color: white;
-    padding: 15px 40px;
+
+
     display: flex;
+
     justify-content: space-between;
+
     align-items: center;
-    position: sticky;
-    top: 0;
+
+
+    padding: 18px 8%;
+
+
+    background-color: white;
+
+
+    border-bottom: 1px solid #ddd;
+
+
 }
+
+
 
 .brand {
+
+
     font-size: 28px;
-    font-weight: bold;
+
+    font-weight: 800;
+
+    color: var(--primary);
+
+
 }
+
+
+
 
 .main-nav a {
-    color: white;
-    text-decoration: none;
+
+
     margin-left: 20px;
-    font-weight: bold;
-    transition: 0.3s;
+
+
+    font-weight: 700;
+
+
 }
 
+
+
 .main-nav a:hover {
-    color: #ffe082;
+
+
+    color: var(--accent);
+
+
 }
+
+
+
+
+
+
+/* =========================
+   HERO
+========================= */
 
 
 .hero {
-    text-align: center;
-    padding: 100px 20px;
-    background: linear-gradient(
-        rgba(0, 140, 186, 0.7),
-        rgba(0, 140, 186, 0.7)
-    ),
-    url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e");
-    background-size: cover;
-    background-position: center;
+
+
+    padding: 90px 8%;
+
+
     color: white;
+
+
+    background:
+
+
+    linear-gradient(
+        135deg,
+        var(--primary),
+        #06b6d4
+    );
+
+
+    text-align: center;
+
+
 }
+
+
+
 
 .eyebrow {
-    font-size: 18px;
-    letter-spacing: 2px;
-    margin-bottom: 10px;
+
+
+    font-size: 20px;
+
+    font-weight: 600;
+
+
 }
+
+
+
 
 #main-title {
-    font-size: 50px;
-    margin-bottom: 20px;
+
+
+    font-size: 55px;
+
+    line-height: 1.2;
+
+    font-weight: 800;
+
+
 }
+
+
+
+
 
 .intro {
-    max-width: 800px;
+
+
+    max-width: 750px;
+
+
     margin: auto;
-    font-size: 18px;
+
+
+    font-size: 20px;
+
+
 }
+
+
+
+
+
+/* Nút */
 
 .primary-button {
+
+
     display: inline-block;
-    margin-top: 30px;
-    padding: 12px 25px;
-    background: #ff9800;
+
+
+    margin-top: 25px;
+
+
+    padding: 14px 25px;
+
+
+    background-color: var(--accent);
+
+
     color: white;
-    text-decoration: none;
-    border-radius: 30px;
+
+
+    border-radius: 999px;
+
+
     font-weight: bold;
-    transition: 0.3s;
+
+
 }
+
+
 
 .primary-button:hover {
-    background: #e68900;
+
+
+    background-color: #ea580c;
+
+
+    transform: translateY(-3px);
+
+
+    transition: .3s;
+
+
 }
 
 
-section {
-    padding: 60px 10%;
+
+
+
+
+
+
+/* =========================
+   SECTION + BOX MODEL
+========================= */
+
+
+.section {
+
+
+    max-width: 1100px;
+
+
+    margin: 40px auto;
+
+
+    padding: 40px;
+
+
+    background-color: white;
+
+
+    border-radius: 22px;
+
+
+    border: 1px solid #e5e7eb;
+
+
+    box-shadow:
+
+    0 10px 25px rgba(0,0,0,0.08);
+
+
 }
 
-section h2 {
+
+
+h2 {
+
+
     text-align: center;
-    margin-bottom: 25px;
-    color: #008cba;
+
+
     font-size: 32px;
-}
-
-section p {
-    margin-bottom: 15px;
-    text-align: justify;
-}
 
 
-#gallery article {
-    background: white;
-    margin-bottom: 20px;
-    padding: 20px;
-    border-left: 6px solid #008cba;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-}
+    color: var(--dark);
 
-#gallery h3 {
-    color: #006b8f;
-    margin-bottom: 10px;
-}
 
-/* Kinh nghiệm */
-#experience {
-    background-color: #eaf7ff;
-}
-
-#experience h3 {
-    color: #006b8f;
-    margin-top: 20px;
-    margin-bottom: 10px;
 }
 
 
-#contact ul {
-    margin-left: 25px;
+
+
+
+
+
+/* =========================
+   LIST
+========================= */
+
+
+.topic-list {
+
+
+    padding: 25px;
+
+
+    margin-top: 25px;
+
+
+    background-color: var(--soft);
+
+
+    border-left: 6px solid var(--accent);
+
+
+    border-radius: 15px;
+
+
 }
 
-#contact li {
-    margin-bottom: 10px;
+
+
+
+.topic-list li {
+
+
+    margin: 10px;
+
+
+    font-size: 18px;
+
+
 }
 
-/* Footer */
-footer {
-    background: #003b5c;
+
+
+
+
+
+
+/* =========================
+   STYLE GUIDE
+========================= */
+
+
+.swatches {
+
+
+    display: flex;
+
+
+    gap: 20px;
+
+
+    justify-content: center;
+
+
+}
+
+
+
+.swatch {
+
+
+    padding: 25px;
+
+
+    border-radius: 18px;
+
+
     color: white;
-    text-align: center;
-    padding: 20px;
-    margin-top: 30px;
+
+
+    font-weight: bold;
+
+
 }
 
 
-@media (max-width: 768px) {
 
-    .site-header {
+.swatch-primary {
+
+
+    background-color: var(--primary);
+
+
+}
+
+
+
+.swatch-accent {
+
+
+    background-color: var(--accent);
+
+
+}
+
+
+
+.swatch-soft {
+
+
+    background-color: var(--soft);
+
+
+    color: var(--dark);
+
+
+}
+
+
+
+
+
+
+
+/* =========================
+   STORY
+========================= */
+
+
+.lead {
+
+
+    font-size: 22px;
+
+
+    font-weight: 600;
+
+
+}
+
+
+
+
+
+blockquote {
+
+
+    padding: 25px;
+
+
+    font-size: 24px;
+
+
+    font-style: italic;
+
+
+    text-align: center;
+
+
+    background-color: #fff7ed;
+
+
+    border-left: 6px solid var(--accent);
+
+
+    border-radius: 15px;
+
+
+}
+
+
+
+
+
+
+
+/* =========================
+   CARD FLEXBOX
+========================= */
+
+
+.card-row {
+
+
+    display: flex;
+
+
+    gap: 25px;
+
+
+    flex-wrap: wrap;
+
+
+}
+
+
+
+
+.feature-card {
+
+
+    flex: 1;
+
+
+    min-width: 250px;
+
+
+    padding: 25px;
+
+
+    background: white;
+
+
+    border-radius: 18px;
+
+
+    border: 1px solid #ddd;
+
+
+    box-shadow:
+
+    0 8px 20px rgba(0,0,0,0.1);
+
+
+    transition: .3s;
+
+
+}
+
+
+
+
+.feature-card:hover {
+
+
+    transform: translateY(-8px);
+
+
+    border-color: var(--primary);
+
+
+}
+
+
+
+
+.feature-card h3 {
+
+
+    color: var(--primary);
+
+
+}
+
+
+
+
+
+
+
+
+
+/* =========================
+   GALLERY
+========================= */
+
+
+.image-strip {
+
+
+    display: flex;
+
+
+    gap: 25px;
+
+
+    flex-wrap: wrap;
+
+
+}
+
+
+
+
+figure {
+
+
+    flex: 1;
+
+
+    min-width: 260px;
+
+
+    margin: 0;
+
+
+    padding: 15px;
+
+
+    background-color: white;
+
+
+    border-radius: 20px;
+
+
+    box-shadow:
+
+    0 10px 25px rgba(0,0,0,.12);
+
+
+    overflow: hidden;
+
+
+    transition: .3s;
+
+
+}
+
+
+
+figure:hover {
+
+
+    transform: translateY(-8px);
+
+
+}
+
+
+
+
+
+img {
+
+
+    width: 100%;
+
+
+    height: 250px;
+
+
+    object-fit: cover;
+
+
+    border-radius: 15px;
+
+
+    display: block;
+
+
+}
+
+
+
+
+figcaption {
+
+
+    padding: 15px;
+
+
+    text-align: center;
+
+
+    font-weight: bold;
+
+
+    color: var(--primary);
+
+
+}
+
+
+
+
+
+
+
+/* =========================
+   FOOTER
+========================= */
+
+
+footer {
+
+
+    background-color: var(--dark);
+
+
+    color: white;
+
+
+    text-align: center;
+
+
+    padding: 25px;
+
+
+}
+
+
+
+
+
+
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+
+    .site-header,
+
+    .card-row,
+
+    .image-strip {
+
+
         flex-direction: column;
-        text-align: center;
+
+
     }
 
-    .main-nav {
-        margin-top: 10px;
-    }
-
-    .main-nav a {
-        display: inline-block;
-        margin: 5px 10px;
-    }
 
     #main-title {
-        font-size: 35px;
+
+
+        font-size: 38px;
+
+
     }
 
-    section {
-        padding: 40px 20px;
-    }
+
 }
-
+{
+    width: 100%;
+    height: auto; /* FIX lỗi yêu cầu */
+    display: block;
+}
